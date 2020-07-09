@@ -1,5 +1,5 @@
 <template>
-  <main class="homepage">
+  <main class="homepage" id="homepage">
     <img src="../assets/homepage/Room_PC.jpg" width="100%" height="100%" alt="">
 
     <router-link to="/diary">
@@ -38,6 +38,10 @@ export default {
     height: 100%;
     margin: 0;
   }
+  main#homepage{
+    height: 100vh;
+  }
+
 
   .main {
     position: relative;

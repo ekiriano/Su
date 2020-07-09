@@ -1,12 +1,14 @@
 <template>
     <main class="gallery">
-
+        <Scene/>
     </main>
 </template>
 
 <script>
+    import Scene from "../components/GoeyCards/Scene";
     export default {
-        name: "Gallery"
+        name: "Gallery",
+        components : {Scene}
     }
 </script>
 

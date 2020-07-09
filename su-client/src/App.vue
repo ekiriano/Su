@@ -12,6 +12,7 @@
     body, html {
         height: 100%;
         margin: 0;
+        background-color: #d7c9d1;;
     }
 
     .homepage {
@@ -30,6 +31,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-    height: 100vh;
+  height: 100vh;
+  background-color: #d7c9d1;;
 }
 </style>

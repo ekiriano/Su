@@ -3,8 +3,44 @@
 </template>
 
 <script>
+
+    import * as THREE from 'three'
+
     export default {
-        name: "Figure"
+        name: "Figure",
+        data : function (){
+            return {
+                scene : null ,
+                $image : null ,
+                image : null,
+                loader : null ,
+                hoverImage : null ,
+                sizes : null ,
+                offset : null ,
+            }
+        },
+        methods : {
+            getSizes() {
+                const { width, height, top, left } = this.$image.getBoundingClientRect()
+
+                this.sizes.set(width, height)
+                this.offset.set(left - window.innerWidth / 2 + width / 2, -top + window.innerHeight / 2 - height / 2)
+            },
+            createMesh() {
+                this.geometry = new THREE.PlaneBufferGeometry(1, 1, 1, 1)
+                this.material = new THREE.MeshBasicMaterial({
+                    map: this.image
+                })
+
+                this.mesh = new THREE.Mesh(this.geometry, this.material)
+
+                this.mesh.position.set(this.offset.x, this.offset.y, 0)
+                this.mesh.scale.set(this.sizes.x, this.sizes.y, 1)
+
+                this.scene.add(this.mesh)
+            }
+        }
+
     }
 </script>
 
