@@ -4,16 +4,16 @@
 
 
             <div class="row">
-                <div class="col-md-8 about_image_container ">
+                <div class="col-md-12 about_image_container d-flex justify-content-center">
                     <img
                             src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                            class="about_image"
+                            class="about_image mt-2"
                             alt="My image"
-                            width="400"
+                            width="200"
                     />
                 </div>
 
-                <div class="col-md-12  offset-md-2 about_description">
+                <div class="col-md-8  offset-md-2 about_description mt-2" >
 
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus excepturi inventore maxime possimus repellendus repudiandae sint totam unde veritatis. At eaque itaque omnis totam? Earum et labore molestiae nobis voluptatem. Ducimus officiis quaerat repellendus voluptatem. Debitis error hic molestiae sequi. Amet blanditiis inventore ipsa magni quae, quaerat repellendus soluta.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus excepturi inventore maxime possimus repellendus repudiandae sint totam unde veritatis. At eaque itaque omnis totam? Earum et labore molestiae nobis voluptatem. Ducimus officiis quaerat repellendus voluptatem. Debitis error hic molestiae sequi. Amet blanditiis inventore ipsa magni quae, quaerat repellendus soluta.</p>
@@ -55,16 +55,16 @@
 </script>
 
 <style scoped>
-    h1 {
-        font-family: 'Libre Baskerville', serif;
-        text-transform: uppercase;
-        font-size: 50pt;
-        position: absolute;
-        top: -35px;
-        right:50px;
-        color: white;
+    /*h1 {*/
+    /*    font-family: 'Libre Baskerville', serif;*/
+    /*    text-transform: uppercase;*/
+    /*    font-size: 50pt;*/
+    /*    position: absolute;*/
+    /*    top: -35px;*/
+    /*    right:50px;*/
+    /*    color: white;*/
 
-    }
+    /*}*/
 
     .about {
         background-color: #d7c9d1;
@@ -72,11 +72,11 @@
     }
 
     .about_image_container{
-        position: relative;
+        /*position: relative;*/
     }
 
     .about_image{
-        margin-left: -400px;
+        /*margin-left: -400px;*/
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     p{
