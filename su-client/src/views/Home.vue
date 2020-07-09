@@ -67,7 +67,7 @@ export default {
   .cactus{
     position: absolute;
     bottom: 20%;
-    right:4%;
+    right:8%;
   }
   .frame{
     position: absolute;
