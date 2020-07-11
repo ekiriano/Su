@@ -1,21 +1,25 @@
 <template>
   <main class="homepage" id="homepage">
-    <img src="../assets/homepage/Room_PC.jpg" width="100%" height="100%" alt="">
+    <img src="../assets/homepage/Room_PC.png" width="100%" height="100%" alt="">
 
     <router-link to="/diary">
-      <img src="../assets/homepage/Book.png" width="10%" alt="book" class="book">
+      <img src="../assets/homepage/Book.png" width="8%" alt="book" class="book">
     </router-link>
 
     <router-link to="/about">
-      <img src="../assets/homepage/Sloth.png"  width="10%" alt="sloth" class="sloth">
+      <img src="../assets/homepage/Sloth.png"  width="10.7%" alt="sloth" class="sloth">
     </router-link>
 
     <router-link to="/shop">
-      <img src="../assets/homepage/Cactus.png" width="10%" alt="cactus" class="cactus">
+      <img src="../assets/homepage/Cactus.png" width="8%" alt="cactus" class="cactus">
     </router-link>
-
+    
+    <router-link to="/message">
+      <img src="../assets/homepage/Contact.png" width="4%" alt="contact" class="contact">
+    </router-link>
+    
     <router-link to="/gallery">
-      <img src="../assets/homepage/Frame.png" width="30%" alt="frame" class="frame">
+      <img src="../assets/homepage/Frame.png" width="36%" alt="frame" class="frame">
     </router-link>
 
   </main>
@@ -54,28 +58,34 @@ export default {
 
   .book{
     position: absolute;
-    bottom: 7%;
-    left: 3%;
+    bottom: 11%;
+    left: 5.6%;
   }
 
   .sloth{
     position: absolute;
-    bottom: 7%;
-    left: 13%;
+    bottom: 6.7%;
+    left: 14.2%;
   }
 
   .cactus{
     position: absolute;
-    bottom: 20%;
-    right:8%;
+    bottom: 20.5%;
+    right:9%;
   }
   .frame{
     position: absolute;
-    left: 40%;
-    top:0;
+    left: 40.4%;
+    top:-3.7%;
   }
 
-  .book:hover, .sloth:hover , .cactus:hover, .frame:hover{
+  .contact{
+    position: absolute;
+    bottom: 36%;
+    left: 37.5%;
+  }
+
+  .book:hover, .sloth:hover , .cactus:hover, .frame:hover, .contact:hover{
     animation: pulse 1s infinite;
     animation-timing-function: linear;
   }

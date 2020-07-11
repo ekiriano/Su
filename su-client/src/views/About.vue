@@ -5,6 +5,7 @@
 
             <div class="row">
                 <div class="col-md-12 about_image_container d-flex justify-content-center">
+                    <h1>About Me</h1>
                     <img
                             src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
                             class="about_image mt-2"
@@ -55,19 +56,18 @@
 </script>
 
 <style scoped>
-    /*h1 {*/
-    /*    font-family: 'Libre Baskerville', serif;*/
-    /*    text-transform: uppercase;*/
-    /*    font-size: 50pt;*/
-    /*    position: absolute;*/
-    /*    top: -35px;*/
-    /*    right:50px;*/
-    /*    color: white;*/
+    h1 {
+        font-family: 'Libre Baskerville', serif;
+        text-transform: uppercase;
+        font-size: 50pt;
+        position: absolute;
+        top: 100px;
+        right:150px;
 
-    /*}*/
+
+    }
 
     .about {
-        background-color: #d7c9d1;
         height: 100vh;
     }
 

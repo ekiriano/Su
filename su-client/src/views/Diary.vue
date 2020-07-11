@@ -1,40 +1,27 @@
 <template>
     <div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 mt-5 d-flex justify-content-center">
-                    <img src="../assets/homepage/Book.png" width="10%" alt="">
-                </div>
-            </div>
-        </div>
+
         <div class="container mt-5">
             <div class="row masonry-grid">
-                <div class="col-md-12 col-lg-4 col-sm-12 masonry-column p-0 m-0">
-                    <div class="post">
-                        <div class="post-overlay" >
-                            <h2 class="mb-4 mt-4">rrr</h2>
-                            <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque libero numquam pariatur qui quia, quibusdam totam voluptatem? Deserunt, explicabo perspiciatis.</p>
-                            <router-link  to="#" class="learn-more ml-4 mt-2"> Learn More ...</router-link>
-                        </div>
-                    </div>
+                <div class="col-md-12 col-lg-3 col-sm-12 masonry-column p-2 m-0">
+                   <DiaryCategory/>
+                   <DiaryCategory/>
+                   <DiaryCategory/>
                 </div>
-                <div class="col-md-12 col-lg-4 col-sm-12 masonry-column p-0 m-0">
-                    <div class="post">
-                        <div class="post-overlay" >
-                            <h2 class="mb-4 mt-4">rrr</h2>
-                            <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque libero numquam pariatur qui quia, quibusdam totam voluptatem? Deserunt, explicabo perspiciatis.</p>
-                            <router-link  to="#" class="learn-more ml-4 mt-2"> Learn More ...</router-link>
-                        </div>
-                    </div>
+                <div class="col-md-12 col-lg-3 col-sm-12 masonry-column p-2 m-0">
+                    <DiaryCategory/>
+                    <DiaryCategory/>
+                    <DiaryCategory/>
                 </div>
-                <div class="col-md-12 col-lg-4 col-sm-12 masonry-column p-0 m-0">
-                    <div class="post">
-                        <div class="post-overlay" >
-                            <h2 class="mb-4 mt-4">rrr</h2>
-                            <p class="ml-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque libero numquam pariatur qui quia, quibusdam totam voluptatem? Deserunt, explicabo perspiciatis.</p>
-                            <router-link  to="#" class="learn-more ml-4 mt-2"> Learn More ...</router-link>
-                        </div>
-                    </div>
+                <div class="col-md-12 col-lg-3 col-sm-12 masonry-column p-2 m-0">
+                    <DiaryCategory/>
+                    <DiaryCategory/>
+                    <DiaryCategory/>
+                </div>
+                <div class="col-md-12 col-lg-3 col-sm-12 masonry-column p-2 m-0">
+                    <DiaryCategory/>
+                    <DiaryCategory/>
+                    <DiaryCategory/>
                 </div>
             </div>
         </div>
@@ -43,8 +30,12 @@
 </template>
 
 <script>
+
+    import DiaryCategory from "../components/Diary/DiaryCategory";
+
     export default {
         name: "Diary",
+        components:{DiaryCategory},
         data: function () {
             return{
                 posts:{
@@ -85,6 +76,12 @@
 
     .masonry-grid > div  {
         margin: 5px 1px;
+    }
+    .post1{
+        height:400px;
+    }
+    .post2{
+        height:600px;
     }
 
 

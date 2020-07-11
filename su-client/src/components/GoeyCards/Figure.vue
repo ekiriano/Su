@@ -8,9 +8,16 @@
 
     export default {
         name: "Figure",
+        props : {
+            scene : {
+                required : true,
+                type : Object
+            }
+        },
         data : function (){
             return {
-                scene : null ,
+                // scene: this.props.scene,
+                figureScene : null,
                 $image : null ,
                 image : null,
                 loader : null ,
@@ -37,8 +44,21 @@
                 this.mesh.position.set(this.offset.x, this.offset.y, 0)
                 this.mesh.scale.set(this.sizes.x, this.sizes.y, 1)
 
-                this.scene.add(this.mesh)
+                this.figureScene.add(this.mesh)
             }
+        },
+        created() {
+            this.$image = document.querySelector('.tile__image')
+            this.figureScene = this.props.scene
+
+            this.loader = new THREE.TextureLoader()
+
+            this.image = this.loader.load(this.$image.dataset.src)
+            this.hoverImage = this.loader.load(this.$image.dataset.hover)
+            this.sizes = new THREE.Vector2(0, 0)
+            this.offset = new THREE.Vector2(0, 0)
+            this.getSizes()
+            this.createMesh()
         }
 
     }

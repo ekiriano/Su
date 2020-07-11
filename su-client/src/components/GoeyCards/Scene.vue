@@ -16,7 +16,7 @@
 
       <canvas ref="stage" id="stage"></canvas>
 
-      <Figure/>
+      <Figure :scene="this.scene" />
   </div>
 </template>
 
